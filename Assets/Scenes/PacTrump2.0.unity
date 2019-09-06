@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1023,6 +1023,7 @@ GameObject:
   - component: {fileID: 308616862}
   - component: {fileID: 308616863}
   - component: {fileID: 308616864}
+  - component: {fileID: 308616865}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1079,6 +1080,18 @@ MonoBehaviour:
   toggleAngle: 5
   speed: 2
   moveForward: 0
+--- !u!114 &308616865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308616861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 026c432867638442fa6ba16147fae576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &334296396
 GameObject:
   m_ObjectHideFlags: 0
@@ -3510,6 +3523,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0df12638363ae47e4b70c1e7771631ad,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0df12638363ae47e4b70c1e7771631ad,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0df12638363ae47e4b70c1e7771631ad,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0df12638363ae47e4b70c1e7771631ad, type: 3}
 --- !u!1 &1030373033 stripped
@@ -3573,7 +3601,7 @@ CapsuleCollider:
   m_Radius: 0.5
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0, y: 2, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!82 &1030373039
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3707,7 +3735,7 @@ MonoBehaviour:
   zPos: 2.14
   yPos: -1.08
   enemyCount: 0
-  numberOfTrumps: 0
+  numberOfTrumps: 4
 --- !u!65 &1068906846
 BoxCollider:
   m_ObjectHideFlags: 0
