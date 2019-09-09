@@ -7,7 +7,7 @@ public class PauseMenuExample : MonoBehaviour {
 
 	void Awake () {
         // Get panel object
-        panel = transform.FindChild("PauseMenuPanel").gameObject;
+        panel = transform.Find("PauseMenuPanel").gameObject;
         if (panel == null) {
             Debug.LogError("PauseMenuPanel object not found.");
             return;
