@@ -8,7 +8,7 @@ public class TrumpFollow : MonoBehaviour
 
     private NavMeshAgent TrumpAI;
 
-    public GameObject Player;
+    GameObject Player;
 
     public float TrumpAIDistanceRun = 4.0f;
 
@@ -22,7 +22,7 @@ public class TrumpFollow : MonoBehaviour
 
         animCon = GetComponent<Animator>();
 
-        
+        Player = GameObject.FindGameObjectWithTag("Player");
 
     }
 

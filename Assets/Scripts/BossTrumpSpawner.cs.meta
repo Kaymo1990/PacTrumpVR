@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 366acb99cc4b84778a184daa73c7f409
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - bossTrump: {fileID: 1700718743660834932, guid: ea3df0c3c7bce4bd1aab974f8b9956ad,
+      type: 3}
+  - fireAndFurySound: {fileID: 8300000, guid: 90b62a150ade248fd81c5e3a4fb38e0a, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

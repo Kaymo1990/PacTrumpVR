@@ -17,7 +17,7 @@ public class PlayerLife : MonoBehaviour
 
     }
 
-    void OnControllerColliderHit(ControllerColliderHit col)     {         if (col.gameObject.name == "TrumpAI" || col.gameObject.name == "TrumpAI(Clone)")
+    void OnControllerColliderHit(ControllerColliderHit col)     {         if (col.gameObject.name == "TrumpAI" || col.gameObject.name == "TrumpAI(Clone)" || col.gameObject.name == "TrumpBoss(Clone)")
         {             SceneManager.LoadScene("intro"); ;
 
         }

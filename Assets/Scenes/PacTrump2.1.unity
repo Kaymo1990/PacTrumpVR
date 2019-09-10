@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 72424ca3bb9d8d048b29cb4a0bb48284, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.6339887, g: 0.6602139, b: 0.70107317, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4496,6 +4496,7 @@ MonoBehaviour:
   yPos: -1.65
   enemyCount: 0
   numberOfTrumps: 0
+  timeBetweenSpawn: 0
 --- !u!1 &288561361
 GameObject:
   m_ObjectHideFlags: 0
@@ -7092,6 +7093,154 @@ Transform:
   m_Father: {fileID: 61788862}
   m_RootOrder: 267
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &404612856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 404612857}
+  - component: {fileID: 404612858}
+  - component: {fileID: 404612859}
+  m_Layer: 0
+  m_Name: BossTrumpSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &404612857
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404612856}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1068906849}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &404612858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404612856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 366acb99cc4b84778a184daa73c7f409, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Spawned: 0
+  thresholdScore: 100
+  bossTrump: {fileID: 1700718743660834932, guid: ea3df0c3c7bce4bd1aab974f8b9956ad,
+    type: 3}
+  xPos: -4.64
+  zPos: 2.14
+  yPos: -1.08
+  fireAndFurySound: {fileID: 8300000, guid: 90b62a150ade248fd81c5e3a4fb38e0a, type: 3}
+--- !u!82 &404612859
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404612856}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &408474526
 GameObject:
   m_ObjectHideFlags: 0
@@ -12280,6 +12429,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 693791466}
+  - component: {fileID: 693791467}
   m_Layer: 0
   m_Name: Maze
   m_TagString: Untagged
@@ -12358,6 +12508,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &693791467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693791465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 865b74686703a4a10abf268a1bda9ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalSkyBox: {fileID: 2100000, guid: b8a7135813c35ea4c98611614187d320, type: 2}
+  bossTrumpSkyBox: {fileID: 2100000, guid: eecebfe16ab9d45d58ba00cb39d1fb41, type: 2}
+  Skyboxchanged: 0
+  SceneChangeThreshold: 100
 --- !u!1 &694205178
 GameObject:
   m_ObjectHideFlags: 0
@@ -18492,7 +18658,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 690e0b079db624a51a06fc05bfb1ed6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 308616861}
   TrumpAIDistanceRun: 15
 --- !u!195 &1030373035
 NavMeshAgent:
@@ -18504,7 +18669,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 0.5
+  m_Speed: 1.25
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -19300,6 +19465,7 @@ MonoBehaviour:
   yPos: -1.08
   enemyCount: 0
   numberOfTrumps: 4
+  timeBetweenSpawn: 25
 --- !u!65 &1068906846
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19369,7 +19535,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.64, y: -1.08, z: 2.14}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
-  m_Children: []
+  m_Children:
+  - {fileID: 404612857}
+  - {fileID: 2111104923}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -38130,7 +38298,7 @@ GameObject:
   - component: {fileID: 2053460078}
   - component: {fileID: 2053460077}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: TrumpSounds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38164,11 +38332,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _as: {fileID: 0}
   audioSources:
-  - {fileID: 8300000, guid: 5dad9bac998b647089aa8ced7e47fa62, type: 3}
-  - {fileID: 8300000, guid: a5f9c1a2c6c1542b287f9e1aacbb72cf, type: 3}
-  - {fileID: 8300000, guid: be1bbb852c1ee4e0cb870b7edb65f73a, type: 3}
-  - {fileID: 8300000, guid: fb9413985469d4bfaa4ae8ad380c05ee, type: 3}
-  - {fileID: 8300000, guid: d96b248c3eae942c29811e213f83559a, type: 3}
+  - {fileID: 8300000, guid: 4a22e36f102dd43e188af1a1f5560bc3, type: 3}
+  - {fileID: 8300000, guid: c5fb958ebee9747d6ae3c0a545494548, type: 3}
+  - {fileID: 8300000, guid: d84a3cc6227e44664a0dca81f9695333, type: 3}
+  - {fileID: 8300000, guid: 3e44c0111c7f040c0982bd46d1af4860, type: 3}
+  - {fileID: 8300000, guid: d3741dc3e67fb4a34b66c3c2c828b0ae, type: 3}
+  - {fileID: 8300000, guid: 2dcfabcc67cf540d3979847b3d665d6d, type: 3}
+  - {fileID: 8300000, guid: 4797b12282b284c24a66dda21827873f, type: 3}
 --- !u!82 &2053460078
 AudioSource:
   m_ObjectHideFlags: 0
@@ -38181,7 +38351,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.709
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -38987,6 +39157,55 @@ Transform:
   m_Father: {fileID: 693791466}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 89.512, z: 0}
+--- !u!1 &2111104922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2111104923}
+  - component: {fileID: 2111104924}
+  m_Layer: 0
+  m_Name: FireAndFuryEffect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2111104923
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111104922}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1068906849}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2111104924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111104922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc2d5d41de18945f0b70df0d169f0212, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trumpSpawned: 0
+  fireAndFuryEffect: {fileID: 100006, guid: 68849d937b3285f4083f33a1dc4cd5ed, type: 3}
+  xPos: -4.64
+  zPos: 2.14
+  yPos: -1.08
+  scoreThreshold: 100
 --- !u!1 &2113252493
 GameObject:
   m_ObjectHideFlags: 0
