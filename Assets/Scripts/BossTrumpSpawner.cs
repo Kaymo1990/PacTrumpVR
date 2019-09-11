@@ -28,7 +28,10 @@ public class BossTrumpSpawner : MonoBehaviour
         {
             if (SumScore.Score >= thresholdScore)
             {
-                Instantiate(bossTrump, new Vector3(xPos, yPos, zPos), Quaternion.identity);
+                GameObject bossT = Instantiate(bossTrump, new Vector3(xPos, yPos, zPos), Quaternion.identity) as GameObject;
+                bossT.GetComponent<PlayerLife>().thePlayer = GameObject.FindGameObjectWithTag("Player");
+                bossT.GetComponent<PlayerLife>().teleportTarget = GameObject.FindGameObjectWithTag("PlayerRespawn").transform;
+                bossT.GetComponent<PlayerLife>().teleportTargetTrump = GameObject.FindGameObjectWithTag("TrumpRespawn").transform;
                 audioSource.PlayOneShot(fireAndFurySound, 1.0f);
                 Spawned = true;
             }

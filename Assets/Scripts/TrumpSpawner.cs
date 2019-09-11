@@ -11,7 +11,6 @@ public class TrumpSpawner : MonoBehaviour
     public float yPos = -1.65f;
     public int enemyCount;
     public int numberOfTrumps;
-    public int timeBetweenSpawn;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +23,7 @@ public class TrumpSpawner : MonoBehaviour
         while (enemyCount < numberOfTrumps)
         {
             Instantiate(theEnemy, new Vector3(xPos, yPos, zPos), Quaternion.identity);
-            yield return new WaitForSeconds(timeBetweenSpawn);
+            yield return new WaitForSeconds(15);
             enemyCount += 1;
         }
     }

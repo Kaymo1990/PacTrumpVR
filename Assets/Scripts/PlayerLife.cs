@@ -5,22 +5,38 @@ using UnityEngine.SceneManagement;
 
 public class PlayerLife : MonoBehaviour
 {
+    public Transform teleportTarget;
+    public Transform teleportTargetTrump;
+    public GameObject thePlayer;
+    private GameObject[] trump;
+
+    PlayerHealth playerHealth;
+
+
+
     // Start is called before the first frame update
-    void Start()
+
+    private void Start()
     {
+        playerHealth = thePlayer.GetComponent<PlayerHealth>();
 
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter(Collider other)
     {
+        //if(SumScoreManager.Lives == 0)
+        //{
+        //    SceneManager.LoadScene("intro");
+        //}
+        playerHealth.TakeDamage(1);
+        trump = GameObject.FindGameObjectsWithTag("Trump");
+        foreach (GameObject t in trump)
+            t.transform.position = teleportTargetTrump.transform.position;
+        thePlayer.transform.position = teleportTarget.transform.position;
+        print("TESTER!");
 
     }
+  
 
-    void OnControllerColliderHit(ControllerColliderHit col)     {         if (col.gameObject.name == "TrumpAI" || col.gameObject.name == "TrumpAI(Clone)" || col.gameObject.name == "TrumpBoss(Clone)")
-        {             SceneManager.LoadScene("intro"); ;
 
-        }
-
-    }
 }
