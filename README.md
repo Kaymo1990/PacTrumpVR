@@ -70,7 +70,7 @@ iPhone deployment instructions:
 
 ------
 
-![](name-of-giphy.gif)
+![](TrumpForGithub.gif)
 
 ------
 
