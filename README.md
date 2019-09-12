@@ -88,6 +88,10 @@ iPhone deployment instructions:
 •James Palmer
 •Marvin Matovu
 
+------
+
+## User stories
+
 
 ``` As a player
 So that I can play
@@ -141,3 +145,5 @@ As a player
 So that I can lose
 I would like to Donald Trump to catch me
 ```
+
+------
