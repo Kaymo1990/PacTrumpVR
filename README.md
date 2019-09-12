@@ -61,12 +61,12 @@ iPhone deployment instructions:
 
 ## Built With
 
-Unity 2019 2.4f1 - Game engine
-Blender - Building game graphics
-C# - Language for writing scripts
-Android Studio - Deployment to android devices
-XCODE - Deployment to iOS devices
-Google Cardboard SDK
+•Unity 2019 2.4f1 - Game engine
+•Blender - Building game graphics
+•C# - Language for writing scripts
+•Android Studio - Deployment to android devices
+•XCODE - Deployment to iOS devices
+•Google Cardboard SDK
 
 ------
 
@@ -76,11 +76,11 @@ Google Cardboard SDK
 
 ## Authors
 
-Khurram Mohammed (Kay)
-Kareem Zedan
-Ian Aquino
-James Palmer
-Marvin Matovu
+•Khurram Mohammed (Kay)
+•Kareem Zedan
+•Ian Aquino
+•James Palmer
+•Marvin Matovu
 
 
 ``` As a player
