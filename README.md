@@ -19,8 +19,8 @@ You will need to keep your posture upright with your head pointed slightly downw
 ## Prerequisites
 
 You will need either the following:
-• Unity Hub
-• Unity 2019 2.4f1 or greater.
+..* Unity Hub
+..* Unity 2019 2.4f1 or greater.
 • An android (9.0 Pie or greater) or iOS device (12.4.1 or greater).
 • A VR headset which supports your plugged-in device.
 • Google Cardboard SDK.
