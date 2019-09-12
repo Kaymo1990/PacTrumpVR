@@ -19,11 +19,11 @@ You will need to keep your posture upright with your head pointed slightly downw
 ## Prerequisites
 
 You will need either the following:
-..* Unity Hub
-..* Unity 2019 2.4f1 or greater.
-• An android (9.0 Pie or greater) or iOS device (12.4.1 or greater).
-• A VR headset which supports your plugged-in device.
-• Google Cardboard SDK.
+* Unity Hub
+* Unity 2019 2.4f1 or greater.
+* An android (9.0 Pie or greater) or iOS device (12.4.1 or greater).
+* A VR headset which supports your plugged-in device.
+* Google Cardboard SDK.
 
 -------
 
@@ -67,12 +67,12 @@ iPhone deployment instructions:
 
 ## Built With
 
-•Unity 2019 2.4f1 - Game engine
-•Blender - Building game graphics
-•C# - Language for writing scripts
-•Android Studio - Deployment to android devices
-•XCODE - Deployment to iOS devices
-•Google Cardboard SDK
+* Unity 2019 2.4f1 - Game engine
+* Blender - Building game graphics
+* C# - Language for writing scripts
+* Android Studio - Deployment to android devices
+* XCODE - Deployment to iOS devices
+* Google Cardboard SDK
 
 ------
 
@@ -82,11 +82,11 @@ iPhone deployment instructions:
 
 ## Authors
 
-•Khurram Mohammed (Kay)
-•Kareem Zedan
-•Ian Aquino
-•James Palmer
-•Marvin Matovu
+* Khurram Mohammed (Kay)
+* Kareem Zedan
+* Ian Aquino
+* James Palmer
+* Marvin Matovu
 
 ------
 
