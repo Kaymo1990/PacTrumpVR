@@ -10,6 +10,12 @@ Pac-Trump VR is a virtual reality game, whereby you are being chased through a m
 
 ------
 
+## Gameplay instructions
+
+You will need to keep your posture upright with your head pointed slightly downwards while the VR headset is running with the game in order to move - raising your head above a 180 degrees angle will cause your character to stop moving forward. Turning your point of rotation will cause you to rotate simultaneously within the game. Moving forward into the golf balls will increment your score, whereas moving into the enemy will cause your character to take damage to their health (you can take damage three times before returning back to the homescreen of the game).
+
+------
+
 ## Prerequisites
 
 You will need either the following:
