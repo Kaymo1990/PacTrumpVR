@@ -15,4 +15,8 @@ public class controlScript : MonoBehaviour
     {
         SceneManager.LoadScene("PacTrump2.1");
     }
+    public void ChangeSceneToIntro()
+    {
+        SceneManager.LoadScene("intro");
+    }
 }
