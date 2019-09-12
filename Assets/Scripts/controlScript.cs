@@ -8,7 +8,7 @@ public class controlScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     public void ChangeScene()
@@ -18,5 +18,14 @@ public class controlScript : MonoBehaviour
     public void ChangeSceneToIntro()
     {
         SceneManager.LoadScene("intro");
+    }
+    public void ChangeSceneToOptions()
+    {
+        SceneManager.LoadScene("options");
+    }
+    public void ChangeSceneToPlayWithLowWalls()
+    {
+        PlayerPrefs.SetString("Low Walls", "TRUE");
+        SceneManager.LoadScene("PacTrump2.1");
     }
 }
