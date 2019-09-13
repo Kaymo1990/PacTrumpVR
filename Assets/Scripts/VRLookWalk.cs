@@ -6,7 +6,7 @@ public class VRLookWalk : MonoBehaviour
 {
     public Transform vrCamera;
 
-    public float toggleAngle = 5.0f;
+    public float toggleAngle = 350.0f;
 
     public float speed = 2.0f;
 
@@ -23,7 +23,7 @@ public class VRLookWalk : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (vrCamera.eulerAngles.x >= toggleAngle && vrCamera.eulerAngles.x < 90.0f)
+        if (vrCamera.eulerAngles.x >= toggleAngle || vrCamera.eulerAngles.x < 90.0f)
         {
             moveForward = true;
         }

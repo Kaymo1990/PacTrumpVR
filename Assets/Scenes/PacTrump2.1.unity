@@ -5015,7 +5015,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 308616861}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -4.68, y: 0.4, z: -5.99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5023,7 +5023,7 @@ Transform:
   - {fileID: 1163874190}
   m_Father: {fileID: 0}
   m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!143 &308616863
 CharacterController:
   m_ObjectHideFlags: 0
@@ -5055,7 +5055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vrCamera: {fileID: 638838852}
-  toggleAngle: 5
+  toggleAngle: 350
   speed: 2
   moveForward: 0
 --- !u!114 &308616865
@@ -11899,7 +11899,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 638838849}
-  m_LocalRotation: {x: -0, y: 0.6214655, z: -0, w: 0.78344154}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.38585424, y: 0, z: 0.30661106}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -11908,7 +11908,7 @@ Transform:
   - {fileID: 1619874864}
   m_Father: {fileID: 308616862}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 76.846, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &639059440
 GameObject:
   m_ObjectHideFlags: 0
@@ -18863,7 +18863,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 42e65e088b3f4374e851b8dbd38f3df9, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.469
+  m_Volume: 0.35
   m_Pitch: 1
   Loop: 1
   Mute: 0

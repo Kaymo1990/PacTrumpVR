@@ -510,7 +510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc3986c25d4245959c245631a27e6af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gazeTime: 3
+  gazeTime: 2.3
 --- !u!1 &53550399
 GameObject:
   m_ObjectHideFlags: 0
@@ -1206,7 +1206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc3986c25d4245959c245631a27e6af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gazeTime: 3
+  gazeTime: 2.3
 --- !u!114 &200692499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1502,7 +1502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc3986c25d4245959c245631a27e6af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gazeTime: 3
+  gazeTime: 2.3
 --- !u!114 &257431209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1793,7 +1793,6 @@ MonoBehaviour:
   yPos: -1.65
   enemyCount: 0
   numberOfTrumps: 0
-  timeBetweenSpawn: 0
 --- !u!1 &288561361
 GameObject:
   m_ObjectHideFlags: 0
@@ -2241,7 +2240,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LowButton: {fileID: 34796062}
   HighButton: {fileID: 200692495}
-  Trump: {fileID: 8113785966744870910, guid: fbbb4ac9b0dc541efa04e935787956cd, type: 3}
 --- !u!4 &394387370
 Transform:
   m_ObjectHideFlags: 0
