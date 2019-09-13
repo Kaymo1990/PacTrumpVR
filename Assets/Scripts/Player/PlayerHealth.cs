@@ -12,13 +12,19 @@ public class PlayerHealth : MonoBehaviour
     public AudioClip deathClip;
     public float flashSpeed = 0.75f;                               // The speed the damageImage will fade at.
     public Color flashColour = new Color(225f, 0f, 16f, 225f);     // The colour the damageImage is set to, to flash.
+    public GameObject life1, life2, life3, gameOver;
     AudioSource audioSource;
+
     Animator anim;                                              // Reference to the Animator component.
     bool isDead;                                                // Whether the player is dead.
     bool damaged;                                               // True when the player gets damaged.
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        life1.gameObject.SetActive(true);
+        life2.gameObject.SetActive(true);
+        life3.gameObject.SetActive(true);
+        gameOver.gameObject.SetActive(false);
     }
     void Awake()
     {
@@ -60,8 +66,20 @@ public class PlayerHealth : MonoBehaviour
         }
         // Reduce the current health by the damage amount.
         currentHealth -= amount;
-        // Set the health bar’s value to the current health.
-        healthSlider.value = currentHealth;
+        switch(currentHealth)
+        {
+            case 2:
+                life3.gameObject.SetActive(false);
+                break;
+            case 1:
+                life2.gameObject.SetActive(false);
+                break;
+            case 0:
+                life1.gameObject.SetActive(false);
+                break;
+
+        }
+
         // If the player has lost all it’s health and the death flag hasn’t been set yet...
         if (currentHealth <= 0 && !isDead)
         {
@@ -69,17 +87,14 @@ public class PlayerHealth : MonoBehaviour
             StartCoroutine(Death());
         }
     }
-    //void Death()
-    //{
-    // Set the death flag so this function won’t be called again.
-    //isDead = true;
+
     IEnumerator Death()
     {
         isDead = true;
+        gameOver.gameObject.SetActive(true);
         Time.timeScale = 0.1f;
         yield return new WaitForSeconds(0.1f);
-        //SceneManager.LoadScene(“EnterDetails”);
-        SceneManager.LoadScene("intro");
+        SceneManager.LoadScene("EnterDetails");
     }
     //}
 }
