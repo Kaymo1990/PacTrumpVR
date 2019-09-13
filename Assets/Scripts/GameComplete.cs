@@ -14,7 +14,7 @@ public class GameComplete : MonoBehaviour
             if (SumScore.Score >= 3000)
             {
                 SceneManager.LoadScene("Victory");
-                gameWon = true;
+                gameWon = true;              
             }
         }
     }

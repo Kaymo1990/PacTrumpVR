@@ -21,7 +21,7 @@ public class EndVictoryScene : MonoBehaviour
         }
         void GameOver()
         {
-            SceneManager.LoadScene("intro");
+            SceneManager.LoadScene("EnterDetails");
         }
     }
 }
