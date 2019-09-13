@@ -19,8 +19,8 @@ public class PlayerHealth : MonoBehaviour
     bool isDead;                                                // Whether the player is dead.
     bool damaged;                                               // True when the player gets damaged.
     void Start()
-    {
-        audioSource = GetComponent<AudioSource>();
+    { 
+    audioSource = GetComponent<AudioSource>();
         life1.gameObject.SetActive(true);
         life2.gameObject.SetActive(true);
         life3.gameObject.SetActive(true);
@@ -93,7 +93,8 @@ public class PlayerHealth : MonoBehaviour
         isDead = true;
         gameOver.gameObject.SetActive(true);
         Time.timeScale = 0.1f;
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.2f);
+        Time.timeScale = 1f;
         SceneManager.LoadScene("EnterDetails");
     }
     //}
