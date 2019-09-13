@@ -7,6 +7,9 @@ public class AddUsernameAndScore : MonoBehaviour
 {
     public static bool Changed = false;
 
+    public int[] CopyOfLeaderboardScoresArray = new int[10];
+    public string[] CopyOfLeaderboardNamesArray = new string[10];
+
     GameObject CreateText(Transform canvas_transform, float x, float y,
         string text_to_print, int font_size, Color text_color)
     {
@@ -30,29 +33,46 @@ public class AddUsernameAndScore : MonoBehaviour
     void Start()
     {
 		Changed = false;
-		for (int i = 0; i < 10; i++)
+
+        for (int i = 0; i < 10; i++)
+        {
+            if (PlayerPrefs.GetString("HighScore" + i) == null)
+            {
+                LeaderBoardScores.createLeaderBoardEntries();
+            }
+        }
+        for(int i = 0; i < 10; i++)
+        {
+            CopyOfLeaderboardScoresArray[i] = PlayerPrefs.GetInt("HighScore" + i);
+            CopyOfLeaderboardNamesArray[i] = PlayerPrefs.GetString("Player" + i);
+            
+        }
+
+        for (int i = 0; i < 10; i++)
 		{
-			if (PlayerPrefs.GetString("HighScore" + i) == null)
-			{
-				LeaderBoardScores.createLeaderBoardEntries();
+            if  (SumScore.Score > PlayerPrefs.GetInt("HighScore" + i) && Changed == false)
+            {            
+                for (int j = i; j < 10; j++)
+                {
+                    PlayerPrefs.SetString("Player" + (j + 1), CopyOfLeaderboardNamesArray[j]);
+                    PlayerPrefs.SetInt("HighScore" + (j + 1), CopyOfLeaderboardScoresArray[j]);                
+                }
 
-			}
+                PlayerPrefs.SetString("Player" + i, InputFieldButtonText.Username);
+                PlayerPrefs.SetInt("HighScore" + i, SumScore.Score);
+                CreateText(transform, 10, 321 - (71 * i), PlayerPrefs.GetString("Player" + i)
+                    + ":\t" + PlayerPrefs.GetInt("HighScore" + i).ToString(), 25, Color.yellow);
+                Changed = true;
+            }
 
-			else if (SumScore.Score > PlayerPrefs.GetInt("HighScore" + i) && Changed == false)
-			{
-				PlayerPrefs.SetString("Player" + i, InputFieldButtonText.Username);
-				PlayerPrefs.SetInt("HighScore" + i, SumScore.Score);
-				CreateText(transform, 10, 321 - (71 * i), PlayerPrefs.GetString("Player" + i)
-					+ ":\t" + PlayerPrefs.GetInt("HighScore" + i).ToString(), 25, Color.yellow);
-				Changed = true;
-			}
-			else
-			{
-				CreateText(transform, 10, 321 - (71 * i), PlayerPrefs.GetString("Player" + i)
-					+ ":\t" + PlayerPrefs.GetInt("HighScore" + i).ToString(), 25, Color.yellow);
-			}
+            else
+            {
+                CreateText(transform, 10, 321 - (71 * i), PlayerPrefs.GetString("Player" + i)
+                    + ":\t" + PlayerPrefs.GetInt("HighScore" + i).ToString(), 25, Color.yellow);
+            }
 		}
     }
+
 	private float timeLeft = 3.0f;
 
     void Update()
