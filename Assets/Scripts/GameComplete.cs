@@ -9,13 +9,23 @@ public class GameComplete : MonoBehaviour
     // Start is called before the first frame update
     void Update()
     {
+        gameCheck();
+    }
+
+    public void gameCheck()
+    {
         if (gameWon == false)
         {
             if (SumScore.Score >= 3000)
             {
                 SceneManager.LoadScene("Victory");
-                gameWon = true;              
+                gameWon = true;
             }
         }
+    }
+
+    public void gameStatus(bool status)
+    {
+        gameWon = status;
     }
 }
