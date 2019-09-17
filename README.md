@@ -1,7 +1,5 @@
 # Pac-Trump VR
 
-## User Stories
-
 ## What is Pac-Trump VR?
 
 ------
@@ -62,6 +60,14 @@ iPhone deployment instructions:
 13. Press the triangular play icon to rebuild . If successful it will ask you to unlock your iPhone.
 14. In order to open your unity project on your iPhone, open settings > general settings >device management and authorise yourself.  You can now open your app
 15. You will need to repeat steps 12-14 every time you build and run a new app on your iPhone.
+
+-------
+
+## Running tests
+
+1. Open the Unity project and select the Unity Testrunner via Window -> General -> Testrunner.
+2. Right click the Testrunner and select 'Run all tests'.
+3. Expand the tests folder within the Testrunner to view individual unit tests.
 
 -------
 
