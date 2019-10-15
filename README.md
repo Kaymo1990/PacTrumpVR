@@ -6,6 +6,8 @@
 
 Pac-Trump VR is a virtual reality game, whereby you are being chased through a maze by multiple enemies who spawn at set intervals in the centre of a maze. Your goal is to collect all golf balls in the maze before your three lives have been expended - you will lose a life each time an enemy touches you and be teleported to another spot on the map.
 
+![](TrumpForGithub.gif)
+
 ------
 
 ## Gameplay instructions
@@ -79,10 +81,6 @@ iPhone deployment instructions:
 * Android Studio - Deployment to android devices
 * XCODE - Deployment to iOS devices
 * Google Cardboard SDK
-
-------
-
-![](TrumpForGithub.gif)
 
 ------
 
